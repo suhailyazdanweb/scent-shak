@@ -1,0 +1,3 @@
+
+Setting my local folder with secondary github account to push the changes -
+- - - - - - git remote set-url origin https://suhailyazdanweb@github.com/suhailyazdanweb/scent-shak.git
