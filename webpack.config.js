@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
@@ -24,6 +25,25 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'images',
+                },
+            },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset/resource',
+        generator: {
+            filename: 'images/[name][ext]',
+        },
+      }
     ],
   },
 }
