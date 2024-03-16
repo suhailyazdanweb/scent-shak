@@ -7,19 +7,35 @@
     <title>Webpack App</title>
   </head>
   <body>
-    <div class="h-20 bg-[#FFFFCC] w-100">
-      <div class="container h-full mx-auto bg-[#FFFFCC] flex align-middle">
+    <div class="relative">
+    <div class="fixed w-full h-20 bg-white bg-opacity-80 border-b-[#02b2c8] border-b-[1px]">
+      <div class="container flex h-full mx-auto align-middle">
         <img src="images/logo-scent-shak.svg" class="w-36" />
 
-        <ul class="flex h-24 align-middle bg-red-500 justify-normal">
-          <li class="bg-green-100">About</li>
-          <li>Products</li>
-          <li>Offers</li>
-          <li>Contact</li>
-          <li>Gallery</li>
+        <ul class="flex items-center ms-auto">
+          <li class="px-5">
+            <a href="#" class="hover:underline text-[#02b2c8]">About</a>
+          </li>
+
+          <li class="px-5">
+            <a href="#" class="hover:underline text-[#02b2c8]">Products</a>
+          </li>
+
+          <li class="px-5">
+            <a href="#" class="hover:underline text-[#02b2c8]">Offers</a>
+          </li>
+
+          <li class="px-5">
+            <a href="#" class="hover:underline text-[#02b2c8]">Gallery</a>
+          </li>
         </ul>
       </div>
     </div>
+
+    <div>
+      <img src="images/Banner.png" class="w-full" />
+    </div>
+  </div>
 
     <script src="bundle.js"></script>
   </body>
