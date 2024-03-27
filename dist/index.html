@@ -4,36 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Webpack App</title>
   </head>
   <body>
     <div class="relative">
-    <div class="fixed w-full h-20 bg-white bg-opacity-80 border-b-[#02b2c8] border-b-[1px]">
+    <div class="fixed w-full h-20 bg-white bg-opacity-70 border-b-[#02B2C8] border-b-[1px]">
       <div class="container flex h-full mx-auto align-middle">
         <img src="images/logo-scent-shak.svg" class="w-36" />
 
         <ul class="flex items-center ms-auto">
-          <li class="px-5">
-            <a href="#" class="hover:underline text-[#02b2c8]">About</a>
+          <li class="px-9">
+            <a href="#" class="hover:underline text-[#2d8692] font-nato text-lg">About</a>
           </li>
 
-          <li class="px-5">
-            <a href="#" class="hover:underline text-[#02b2c8]">Products</a>
+          <li class="px-9">
+            <a href="#" class="hover:underline text-[#2d8692] font-nato text-lg">Products</a>
           </li>
 
-          <li class="px-5">
-            <a href="#" class="hover:underline text-[#02b2c8]">Offers</a>
+          <li class="px-9">
+            <a href="#" class="hover:underline text-[#2d8692] font-nato text-lg">Offers</a>
           </li>
 
-          <li class="px-5">
-            <a href="#" class="hover:underline text-[#02b2c8]">Gallery</a>
+          <li class="px-9">
+            <a href="#" class="hover:underline text-[#2d8692] font-nato text-lg">Gallery</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div>
-      <img src="images/Banner.png" class="w-full" />
+      <div>
+        <img src="images/banner-golden-theme.jpg" class="w-full" />
+      </div>
+
+      <div class="w-full bg-[#02B2C8]">
+        <div class="relative flex overflow-x-hidden max-w-[960px] mx-auto">
+          <div class="absolute flex-shrink-0 flex justify-center items-center w-32 h-32 bg-gradient-to-r from-[#02B2C8]/[0.3] to-transparent">
+            <i class="text-6xl material-icons text-[#02B2C8]">arrow_back_ios</i>
+          </div>
+
+          <div class="absolute right-0 flex-shrink-0 flex justify-center items-center w-32 h-32 bg-gradient-to-r from-transparent to-[#02B2C8]/[0.3]">
+            <i class="text-6xl material-icons text-[#02B2C8] text-right">arrow_forward_ios</i>
+          </div>
+          
+          <div class="w-40 h-32 bg-yellow-200 border-r-[#02B2C8] border-r-[1px] flex-shrink-0"></div>
+          <div class="w-40 h-32 bg-yellow-200 border-r-[#02B2C8] border-r-[1px] flex-shrink-0"></div>
+          <div class="w-40 h-32 bg-yellow-200 border-r-[#02B2C8] border-r-[1px] flex-shrink-0"></div>
+          <div class="w-40 h-32 bg-yellow-200 border-r-[#02B2C8] border-r-[1px] flex-shrink-0"></div>
+          <div class="w-40 h-32 bg-yellow-200 border-r-[#02B2C8] border-r-[1px] flex-shrink-0"></div>
+          <div class="w-40 h-32 bg-yellow-200"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <h3>This is the heading <i class="text-lg text-red-500 material-icons">arrow_back_ios</i></h3>
     </div>
   </div>
 
